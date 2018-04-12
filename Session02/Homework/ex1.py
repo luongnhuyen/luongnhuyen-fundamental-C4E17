@@ -1,14 +1,14 @@
-Mass = int(input("Your mass (kg): "))
-Height = int(input("Your height (m): "))
-BMI = int(Mass/(Height*height))
-
-If BMI < 16 :
-  Print("Severely underweight")
+a = int(input("Your mass (kg): "))
+b = int(input("Your height (cm): "))
+BMI = a/(b/100*b/100)
+print("BMI:",BMI)
+if BMI < 16 :
+  print("Severely underweight")
 elif BMI < 18.5 :
-  Print("Underweight")
+  print("Underweight")
 elif BMI < 25 :
-  Print("Normal")
+  print("Normal")
 elif BMI < 30 :
-  Print("Overweight")
+  print("Overweight")
 else:
-  Print("Obese")
+  print("Obese")

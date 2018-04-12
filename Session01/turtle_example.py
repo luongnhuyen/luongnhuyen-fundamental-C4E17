@@ -6,7 +6,7 @@ left(90)
 forward(200)
 left(90)
 forward(200)
-left(90)
+left(90)pth
 forward(200)
 left(30)
 forward(200)

@@ -1,6 +1,6 @@
 from turtle import *
 shape("turtle")
-
+pencolor("red")
 right(30)
 for i in range (0,4,1):
   forward(100)

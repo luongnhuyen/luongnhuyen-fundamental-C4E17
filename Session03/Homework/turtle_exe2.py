@@ -2,30 +2,13 @@ from turtle import *
 
 shape ("turtle")
 
-pencolor("red")
-for i in range (3):
-    forward (100)
-    left(120)
+colors = ["red", "blue", "brown", "yellow", "grey"]
 
-pencolor("blue")
-for i in range (4):
-    forward (100)
-    left(90)
-
-pencolor("brown")
-for i in range (5):
-    forward (100)
-    left(72)
-
-pencolor("yellow")
-for i in range (6):
-    forward (100)
-    left(60)
-
-pencolor("grey")
-for i in range (7):
-    forward (100)
-    left(51.5)
+for i in range (3,8):
+    color(colors[i-3])
+    for j in range (i):
+        forward (100)
+        left(180-(i-2)/i*180)
 
 
-mainloop ()
+mainloop()

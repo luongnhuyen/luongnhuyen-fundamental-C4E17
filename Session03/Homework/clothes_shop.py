@@ -3,12 +3,16 @@ print("Our items:")
 items = ["T-Shirt", "Sweater"]
 print(*items, sep=', ')
 
-items.append("Jeans")
+new_item=input("Enter new item:")
+items.append(new_item)
 print(*items, sep=', ')
 
-items.remove("Sweater")
-items.insert(1,"Skirt")
+n= int(input("Update position:"))
+items.pop(n-1)
+m=input("New item?")
+items.insert(n-1,m)
 print(*items, sep=', ')
 
-del(items[2])
+l=int(input("Delete position:"))
+del(items[l])
 print(*items, sep=', ')

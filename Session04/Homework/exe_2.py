@@ -7,16 +7,21 @@ All you have to do is to answer to my guess
 
 loop = True
 m = 50
+m1=0
+m2=100
+
 a= str("s")
 b= str("l")
 c= str("c")
 while loop:
     n = input("Is {0} your number:".format(m))
     if n == a:
-        m = m-m//2
+        m2 = m
+        m = m1+(m2-m1)//2
         # print ("Is", m, "your number: ")
     elif n == b:
-        m=m+m//2
+        m1 = m
+        m = m1+(m2-m1)//2
         # print ("Is", l, "your number: ")
     elif n == c:
         print ("Correct")

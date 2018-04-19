@@ -3,10 +3,10 @@ characters = list(text)
 loop = True
 while loop:
     from random import choice    #chon ngau nhien ben trong 1 list
-    characters=characters
+    c=0
     print(choice(characters),end=" ")
-
-    characters.remove(choice(characters))
+    if c == choice(characters):
+        characters.remove(c)
     #
-    if len(characters) == 0:
+    if characters == 0:
         loop = False

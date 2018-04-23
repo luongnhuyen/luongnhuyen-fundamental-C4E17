@@ -13,5 +13,9 @@ stock={
 }
 fruits = list(prices.keys())
 for i in fruits:
-    if fruit==price.get(i,0):
-        print("price: ",price.get(i,0))
+    print(i)
+    i ==prices.get(i,0)
+    i ==stock.get(i,0)
+    print("price: ",prices.get(i,0))
+    print("stock: ",stock.get(i,0))
+    print()

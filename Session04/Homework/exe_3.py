@@ -1,12 +1,12 @@
+from random import choice
 text = "champion"
 characters = list(text)
+for i in range(len(characters)):
+    a=choice(characters)
+    print(a,end=" ")
+    characters.remove(a)
 loop = True
 while loop:
-    from random import choice    #chon ngau nhien ben trong 1 list
-    c=0
-    print(choice(characters),end=" ")
-    if c == choice(characters):
-        characters.remove(c)
-    #
-    if characters == 0:
+       #chon ngau nhien ben trong 1 list
+    if len(characters) == 0:
         loop = False

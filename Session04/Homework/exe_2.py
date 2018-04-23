@@ -25,4 +25,8 @@ while loop:
         # print ("Is", l, "your number: ")
     elif n == c:
         print ("Correct")
+    if m1==m2:
+        loop = False
+        print ("Wrong")
+
     loop == c

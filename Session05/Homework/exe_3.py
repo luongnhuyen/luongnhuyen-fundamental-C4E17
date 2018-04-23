@@ -20,9 +20,13 @@ for i in fruits:
     print("stock: ",stock.get(i,0))
     print()
 
-total=0
+total = 0
+total_fruits = 0
 for i in fruits:
     i ==prices.get(i,0)
     i ==stock.get(i,0)
-    total=total+prices.get(i,0)*stock.get(i,0)
-print("Total: ", total)
+    total=prices.get(i,0)*stock.get(i,0)
+    print("Total",i,": ", total)
+    total_fruits = total_fruits + prices.get(i,0)*stock.get(i,0)
+
+print("Total fruits: ",total_fruits)

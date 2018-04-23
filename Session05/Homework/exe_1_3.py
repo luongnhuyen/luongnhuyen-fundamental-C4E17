@@ -31,8 +31,8 @@ for box in boxes:
     # print(box["y"])
 
     while True:
-        for y in range(4):
-            for x in range(4):
+        for y in range(5):
+            for x in range(5):
                 if x == p["x"] and y == p["y"]:
                     print("P ", end="")
                 elif x == box["x"] and y == box["y"]:
@@ -69,10 +69,10 @@ for box in boxes:
             box["x"] += dx
             box["y"] += dy
 
-        if 0 <= next_px < 4:
+        if 0 <= next_px < 5:
             p["x"] = next_px
 
-        if 0 <= next_py < 4:
+        if 0 <= next_py < 5:
             p["y"] = next_py
 
         if box["x"] == 1 and box["y"] == 3:
